@@ -12,8 +12,29 @@ namespace AdventOfCode2022
         protected static string GetPath(int day, int puzzle)
         {
             var path = "D:/AdventOfCode/AdventOfCode2022/bin/Debug/netcoreapp3.1/Input/Day_";
-            var fullpath = String.Format( "{0}{1}/day_{2}_{3}.txt",path, day, day, puzzle);
-            return fullpath; 
+            var fullpath = String.Format("{0}{1}/day_{2}_{3}.txt", path, day, day, puzzle);
+            return fullpath;
+        }
+
+       // load data as 1 long string
+       protected static string LoadDataAsString(int day, int puzzle)
+        {
+            var input = "";
+            try
+            {
+                using (StreamReader sr = new StreamReader(GetPath(day, puzzle)))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        input= sr.ReadLine();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            return input;
         }
 
 
