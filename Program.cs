@@ -10,13 +10,13 @@ namespace AdventOfCode2022
         static void Main(string[] args)
         {
 
-            int day = 6;
-            int puzzle = 2;
+            int day = 11;
+            int puzzle = 1;
 
             if (puzzle == 1)
             {
                 Console.WriteLine("Starting puzzle 1");
-                var solve1 = Day_06.Puzzle1();
+                var solve1 = Day_11.Puzzle1();
                 Console.WriteLine("Solution to puzzle 1 of day {0}: {1}", day, solve1);
             }
             else
