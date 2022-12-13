@@ -11,7 +11,7 @@ namespace AdventOfCode2022
         {
 
             int day = 11;
-            int puzzle = 1;
+            int puzzle = 2;
 
             if (puzzle == 1)
             {
